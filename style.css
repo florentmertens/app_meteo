@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #B5E7FE;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .menuIcon {
+  font-size: 30px;
+}
+
+.menu {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #B5E7FE;
+  padding: 20px;
+  transition: width 1s, visibility 0.5s, opacity 1s;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.menu.open {
+  visibility: visible;
+  opacity: 1;
+  width: 70%;
+  box-shadow: -5px 0px 35px black;
+  transition: width 1s, visibility 0.5s, opacity 1s;
+}
+
+.menu .menuIcon {
+  align-self: flex-end;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.menu .searchBar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 2rem;
+  text-align: center;
+  padding: 1rem 0.25rem;
+  margin-bottom: 20px;
+}
+
+.menu .searchBar input {
+  width: 80%;
+  outline: none;
+  border: none;
+  font-size: 1.25rem;
+  background-color: transparent
+}
+
+.menu .searchBar i {
+  width: 20%;
+  font-size: 1.25rem;
+  align-self: center;
+}
+
+.menu p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.temperature {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.temperature .currentTemperature {
+  font-size: 6rem;
+}
+
+.temperature i span {
+  margin-left: 5px;
+}
+
+.weatherImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45%;
+}
+
+.weatherImage img {
+  height: 100%;
+}
+
+.weatherInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weatherInfo .bold {
+  font-weight: bold;
+}
+
+.weatherInfo .value {
+  text-align: end;
+}
+

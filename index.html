@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Météo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2cd317b115.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="menu">
+    <i class="fa-solid fa-xmark menuIcon"></i>
+    <div class="searchBar">
+      <input type="search" name="search" id="search" placeholder="Ville...">
+      <i class="fa-solid fa-magnifying-glass btnSearch"></i>
+    </div>
+    <p class="city">Paris</p>
+    <p class="city">Marseille</p>
+    <p class="city">Lyon</p>
+    <p class="city">Toulouse</p>
+    <p class="city">Nice</p>
+    <p class="city">Nante</p>
+    <p class="city">Montpellier</p>
+    <p class="city">Strasbourg</p>
+    <p class="city">Bordeaux</p>
+    <p class="city">Lille</p>
+  </div>
+  <div class="container">
+    <div class="header">
+      <div>
+        <h1 class="cityName">Lille</h1>
+        <p class="weather">Soleil</p>
+      </div>
+      <i class="fa-solid fa-bars menuIcon" style="color: #000000;"></i>
+    </div>
+    <div class="temperature">
+      <i class="fa-solid fa-arrow-down lowTemperature"><span>10°</span></i>
+      <p class="currentTemperature">15°</p>
+      <i class="fa-solid fa-arrow-up highTemperature"><span>20°</span></i>
+    </div>
+    <div class="weatherImage">
+      <img src="/images/sun.svg">
+    </div>
+    <div class="weatherInfo">
+      <div>
+        <p>SUNRISE</p>
+        <p class="bold">03:20</p>
+      </div>
+      <div>
+        <p>SUNSET</p>
+        <p class="value bold">18:15</p>
+      </div>
+    </div>
+    <div class="weatherInfo">
+      <div>
+        <p>WIND</p>
+        <p class="bold">3 m/s</p>
+      </div>
+      <div>
+        <p>PRESURE</p>
+        <p class="value bold">1021 hPa</p>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
